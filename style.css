@@ -1,0 +1,105 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lora", sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+    background-color: #F4F2F3;
+  }
+  
+  /* thumbnail image */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("thmnnail.jpg");
+    min-height: 110%;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  /* MY PROJECTS section aligning buttons and boxes */
+  #proj .w3-row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  #proj .w3-col.l3.m6.w3-margin-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #proj .w3-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #proj .w3-card img {
+    margin-bottom: 0 !important;
+  }
+  
+  #proj .w3-card .w3-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  #proj .w3-card .w3-container h3,
+  #proj .w3-card .w3-container p {
+    margin: 0 0 8px 0; /* for consistent spacing */
+  }
+  
+  #proj .w3-card .w3-container button {
+    margin-top: auto;
+  }
+  
+  /* Flip card for OTHER WORKS section */
+  .flip-card {
+    display: inline-block; 
+    perspective: 1000px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    width: 100%;
+    backface-visibility: hidden;
+    position: relative;
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
